@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  background-color: grey;
+}
+.conts {
+  display: flex;
+  height: 600px;
+}
+.Sidebar {
+  display: flex;
+  flex: 1;
+  background-color: rgb(88, 84, 84);
+}
+.content {
+  display: flex;
+  flex: 5;
+}

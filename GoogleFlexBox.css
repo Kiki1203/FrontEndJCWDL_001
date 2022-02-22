@@ -1,7 +1,8 @@
 .containerNavbar {
   display: flex;
+  align-items: center;
+  padding: 6px;
   justify-content: flex-end;
-  border: 1px solid black;
 }
 
 .containerContent {
@@ -9,16 +10,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   height: 600px;
 }
 
 .containerFooter {
   display: flex;
   flex-direction: column;
+  background-color: #f2f2f2;
 }
 
 .containerSubMenu {
   display: flex;
   justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: #70757a;
+}
+
+img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
 }
