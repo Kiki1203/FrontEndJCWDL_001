@@ -1,0 +1,44 @@
+body {
+  margin: 0px;
+}
+
+.navbar {
+  background-color: red;
+  height: 50px;
+}
+.containercard {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px;
+}
+.card1 {
+  border: 1px solid black;
+  height: 300px;
+  width: 200px;
+  padding: 20px 20px;
+}
+.incard1 {
+  background-color: black;
+  height: 130px;
+}
+.incard2 {
+  margin-top: 10px;
+  border: 1px solid black;
+  height: 40px;
+}
+.incard3 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.incard31 {
+  border: 1px solid black;
+  width: 45%;
+}
+.incard4 {
+  margin-top: 10px;
+  border: 1px solid black;
+  height: 80px;
+  width: 200px;
+}
