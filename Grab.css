@@ -1,0 +1,506 @@
+body,
+html,
+p,
+div {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navbar */
+
+#navbarContainer {
+  position: fixed;
+  top: 0px;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  width: 100vw;
+  height: 69px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(223, 223, 223, 0.9);
+  z-index: 50;
+}
+
+#navbarLeft {
+  margin-left: 6vw;
+  display: flex;
+  align-items: center;
+}
+
+#menuIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+#menuIcon:hover {
+  cursor: pointer;
+}
+
+#navbarRight {
+  margin-right: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.navbarMenu {
+  font-size: 16px;
+  font-weight: 600;
+  color: #363a45;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropDownIcon {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Font_Awesome_5_solid_chevron-down.svg/1792px-Font_Awesome_5_solid_chevron-down.svg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropDownIcon:hover {
+  cursor: pointer;
+}
+
+.fa-chevron-down {
+  margin-left: 10px;
+}
+
+.navbarMenu:hover {
+  cursor: pointer;
+}
+
+.fa-search {
+  font-size: 22px;
+  margin-left: 22px;
+  color: #363a45;
+}
+
+.fa-search:hover {
+  cursor: pointer;
+}
+
+/* Jumbotron */
+
+.container {
+  margin: 0px 180px 0px 180px;
+}
+
+.greenBG {
+  background-color: #00b14f;
+  transition: 1000ms;
+}
+
+.whiteBG {
+  background-color: #f9f9f9;
+  transition: 1000ms;
+}
+
+#infoCovid {
+  display: flex;
+  height: 25px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#infoCovid:hover {
+  cursor: pointer;
+}
+
+#blueCircle {
+  height: 22px;
+  width: 22px;
+  background-color: #136fd8;
+  border-radius: 50%;
+  margin: 0px 10px 0px 0px;
+}
+
+.jumbotronText {
+  line-height: 1em;
+}
+
+/* Content Section */
+
+#contentSection .container {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+/* Left Content */
+
+#contentLeft {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  align-items: center;
+}
+
+#contentRight {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  align-items: center;
+}
+
+.subcontentContainer {
+  display: flex;
+  width: 95%;
+  height: auto;
+  z-index: 1;
+}
+
+.subcontentTitle {
+  font-family: 'Train One', cursive;
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 29px;
+  margin: 25px 0px 25px 0px;
+}
+
+.subcontentText {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 25px 25px 30px 25px;
+}
+
+.subcontentLink {
+  margin: 0px 25px 30px 25px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.subcontentLink:hover {
+  cursor: pointer;
+}
+
+.subcontentLinkArrow {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.subcontentLinkText {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-top: 7px;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 1px;
+}
+
+/* Right Content */
+
+#contentRight {
+  display: flex;
+  flex-direction: column;
+}
+
+#tawaranMitraContainer {
+  align-self: flex-end;
+  margin-top: 25px;
+}
+
+.tawaranMitra {
+  height: auto;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.tawaranMitraText {
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 250px;
+  margin-left: 30px;
+  font-weight: 500;
+}
+
+.tawaranMitraText:hover {
+  cursor: pointer;
+}
+
+/* Cards Section */
+
+.cardsRow {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.cardIndividual {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  min-height: 502px;
+  background-color: white;
+  border: 0.5px solid rgb(245, 245, 245);
+  padding: 0px 15px 15px 15px;
+  position: relative;
+  transition: border-bottom 500ms;
+}
+
+.cardIndividual:hover > .cardIcon {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.cardIndividual:hover {
+  border-bottom: 5px solid #00b14f;
+  cursor: pointer;
+}
+
+.cardIcon {
+  width: 250px;
+  align-self: center;
+  position: absolute;
+  top: 3%;
+  transition: transform 500ms;
+}
+
+.cardTitle {
+  font-size: 24px;
+  line-height: 26.4px;
+  margin: 0% 10% 5% 10%;
+  position: absolute;
+  top: 55%;
+}
+
+.cardDescription {
+  font-size: 17.6px;
+  line-height: 25.14px;
+  margin: 0% 10% 5% 10%;
+  position: absolute;
+  top: 63.5%;
+}
+
+/* Get the app */
+
+#getTheAppContainer {
+  width: 100%;
+  height: 287px;
+}
+
+#getTheAppTitle {
+  margin-top: 90px;
+  font-size: 32px;
+  line-height: 44.8px;
+  height: 44.8px;
+  margin-bottom: 18px;
+}
+
+#getTheAppButtonContainer {
+  display: flex;
+}
+
+.getTheAppButton {
+  width: 282px;
+  height: 83px;
+  margin: 5px 8px 0px 0px;
+}
+
+.getTheAppButton:hover {
+  cursor: pointer;
+}
+
+/* Berita */
+
+#beritaContainer {
+  width: 100%;
+  height: 313px;
+  background-color: #00b14f;
+  overflow: auto;
+}
+
+#beritaTitle {
+  color: #d6ef52;
+  font-size: 41.6px;
+  line-height: 49.92px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+#beritaDescription {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 100px;
+}
+
+#beritaDescription:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Upper Footer */
+
+#upperFooterContainer {
+  width: 100%;
+  height: auto;
+  background-color: #eaeff2;
+}
+
+#upperFooterInner {
+  display: flex;
+  justify-content: space-between;
+}
+
+#upperFooterLeft {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  margin-right: 20px;
+  margin-bottom: 48px;
+}
+
+#upperFooterRight {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.upperFooterColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.upperFooterColumnTitle {
+  font-size: 16px;
+  line-height: 17.6px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #363a45;
+}
+
+.upperFooterColumnContent {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 3px 0px;
+  color: #363a45;
+}
+
+.upperFooterColumnContent:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#forwardTogether {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17.6px;
+  margin: 20px 0px 35px 0px;
+}
+
+#socmedText {
+  font-size: 14px;
+  line-height: 15.4px;
+  font-weight: 600;
+}
+
+#socmedContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  height: auto;
+  margin: 20px 0px 30px 0px;
+}
+
+.socmedIcon:hover,
+#languageContainer:hover {
+  cursor: pointer;
+}
+
+#languageContainer {
+  width: 180px;
+  height: 38px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.flag {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.country {
+  font-size: 16px;
+  line-height: 22.8571px;
+}
+
+.languageAngleUp {
+  position: absolute;
+  right: 11px;
+}
+
+/* Bottom Footer */
+
+#bottomFooterContainer {
+  background-color: #363a45;
+  width: 100%;
+  height: 84px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#bottomFooterLeft {
+  display: flex;
+  position: absolute;
+  left: 5%;
+}
+
+.bottomFooterLeftText {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 15px;
+}
+
+.bottomFooterLeftText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.bottomFooterLeftBullet {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 15px 0px;
+}
+
+.copyright {
+  color: #ffffff;
+  opacity: 60%;
+  font-size: 18px;
+  justify-self: center;
+  align-self: center;
+}
+
+#bottomFooterRight {
+  display: flex;
+  position: absolute;
+  right: 5%;
+}
+
+.getTheAppButtonSmall:hover {
+  cursor: pointer;
+}
